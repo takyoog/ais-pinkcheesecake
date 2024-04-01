@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Hagrid';
+    src: local('Hagrid Trial Extra bold'), local('Hagrid-Trial-Extra-bold'),
+        url('HagridTrial-Extrabold.woff2') format('woff2'),
+        url('HagridTrial-Extrabold.woff') format('woff'),
+        url('HagridTrial-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }

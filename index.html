@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=700, initial-scale=0.8">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/simple-adaptive-slider.css">
+    <script defer="" src="js/simple-adaptive-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var slider = new ItcSimpleSlider('.itcss', {
+                loop: true,
+                autoplay: true,
+                swipe: true,
+                interval: 5000,
+            });
+        });
+    </script>
+    <script>
+        function set_contacts_active()
+        {
+            var elements = document.getElementsByName('to-hide')
+            elements.forEach(element => {
+                if (element.style.display == 'flex'){
+                    element.style.display = 'none'
+                }
+                else{
+                    element.style.display= 'flex'
+                }
+            });
+        }
+    </script>
+    <title>Розовый чизкейк</title>
+</head>
+
+<body>
+
+    <div class="fixed">
+    <div class="flex row child-m-auto p-25 change-column" style="background: #FACCD7;">
+        <img class="change-show" src="images/лого.png" style="display: none; margin-bottom: 30px;">
+        <a class="x-large" href="#catalog">Каталог</a>
+        <a class="x-large" href="#sales">Предложения</a>
+        <img class="change-hide" src="images/лого.png">
+        <a class="x-large" href="#services">Услуги</a>
+        <a class="x-large" href="#contacts">Контакты</a>
+    </div>
+    </div>
+    
+    <div style="height: 150px;"></div>
+    <div class="flex cover" style="background-image: url(images/фон.png); height: 800px;">
+        <div class="m-auto promo-box">
+            <div class="flex column">
+                <img class="m-auto" src="images/лого на белом.png" width="260px" height="240px">
+                <img class="m-auto m-top-bottom-25" src="images/разделитель для формы связи.png" width="300px">
+                <p style="color: #CAB3BE; text-align: center;">Лучший поставщик кондитерской продукции в Санкт-Петербурге</p>
+            </div>
+        </div>
+        <div class="p-25 flex column child-m-auto change-hide" style="position: absolute; right: 150px; bottom: -40px; background: white; border-radius: 10px; width: 120px;">
+            <div class="p-top-25"><img class="hover" onclick="set_contacts_active()" src="images/закрытие контактов.png" width="100%" height="40px"></dov>
+            <div name="to-hide" class="p-top-25" style="display: flex;"><img class="hover"src="images/вк.png" width="64px" height="64px"></div>
+            <div name="to-hide" class="p-top-25" style="display: flex;"><img class="hover" src="images/телега.png" width="64px" height="64px"></div>
+            <div name="to-hide" class="p-top-25" style="display: flex;"><img class="hover" src="images/ватсап.png" width="64px" height="64px"></div>
+        </div>
+        </div>
+    </div>
+
+    <div class="center-page" id="services">
+        <div class="center-text" style="margin-top: 100px;">
+            <p>Я занимаюсь <span class="bold" style="color: #E3527E;">профессиональной</span> выпечкой тортов уже более 15 лет. На своем опыте знаю, в момент процесса выпечки всегда не вовремя заканчивается нужный краситель, ломается фигурка, рассыпается смесь.</p>
+        </div>
+        <div class="center-text" style="margin-top: 50px; margin-bottom: 150px;">
+            <p>Где кондитеру найти товары поздним вечером, ночью или ранним утром?</p>
+            <p class="bold" style="font-size: 36px; color: #E3527E;">У нас!</p>
+        </div>
+        <div class="flex column center child-m-auto">
+            <p class="bold" style="color:#AC428E; font-size: 36px; text-align: center;">РАБОТАЕМ<br>КРУГЛОСУТОЧНО</p>
+            <img class="m-auto m-top-bottom-25" src="images/разделитель для формы связи.png" width="300px">
+            <p style="font-size: 24px;">Самовывоз 24 часа</p>
+        </div>
+
+        <ul class="list" style="margin-bottom: 150px;">
+            <li>
+                <img class="image" src="images/доставка.png">
+                <p class="header">ДОСТАВЛЯЕМ НА ДОМ</p>
+                <p class="body">Курьерская доставка на дом по СПб и Лен.области.</p>
+            </li>
+            <li>
+                <img class="image" src="images/фотопечать.png">
+                <p class="header">ФОТОПЕЧАТЬ</p>
+                <p class="body">Печатаем на кондитерский изделиях</p>
+            </li>
+            <li>
+                <img class="image" src="images/прокат.png">
+                <p class="header">ВЫДАЕМ НАПРОКАТ</p>
+                <p class="body">Прокат кондитерских форм и приспособлений</p>
+            </li>
+            <li>
+                <img class="image" src="images/консультации.png">
+                <p class="header">КОНСУЛЬТИРУЕМ</p>
+                <p class="body">Индивидуальные консультации по подбору оптимального решения</p>
+            </li>
+        </ul>
+        
+        <div class="flex child-m-auto">
+            <p class="gold-text">Специальные предложения</p>
+        </div>
+    </div>
+
+    <div class="cover"  id="sales" style="background-image: url('images/фон 1.png'); height: 1300px;">
+        <ul class="list" style="padding-top: 15%; width: 60%; margin: auto">
+            <li class="box">
+                <p class="header">БЕСПЛАТНАЯ ДОСТАВКА 24 ЧАСА</p>
+                <img class="divider" src="images/разделитель для формы связи.png" >
+                <p class="body">Получите бесплатную доставку при заказе от 5000₽</p>
+            </li>
+            <li class="box">
+                <p class="header">ДОСТАВКА КУРЬЕРОМ</p>
+                <img class="divider" src="images/разделитель для формы связи.png">
+                <p class="body">Доставим ваш заказ курьером от двери до двери</p>
+            </li>
+            <li class="box">
+                <p class="header">КРУГЛОСУТОЧНЫЙ ПРИЕМ ЗАКАЗОВ</p>
+                <img class="divider" src="images/разделитель для формы связи.png">
+                <p class="body">Принимаем заказы  24 часа в сутки БЕЗ ВЫХОДНЫХ</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="center-page"  id="catalog">
+        <div class="flex child-m-auto">
+            <p class="gold-text">Популярные товары</p>
+        </div>
+
+        <div class="itcss" style="margin-top: 50px;">
+            <div class="itcss__wrapper">
+                <div class="itcss__items">
+                    <div class="itcss__item">
+                        <div style="padding: 0px 50px 0px 50px;">
+                            <div class="card column flex child-m-auto m-auto">
+                                <div class="cover slider-img" style="background-image: url('images/карточки товаров/свечи.jfif');"> </div>
+                                <div style="padding: 30px;">
+                                    <p class="slider-head-text">Свечи праздничные</p>
+                                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+                                    <p style="text-align: center;">Набор свечей для торта (6 свечей), 18 см</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div style="padding: 0px 50px 0px 50px;">
+                            <div class="card column flex child-m-auto m-auto">
+                                <div class="cover slider-img" style="background-image: url('images/карточки товаров/свечи 2.jfif');"> </div>
+                                <div style="padding: 30px;">
+                                    <p class="slider-head-text">Свечи праздничные</p>
+                                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+                                    <p style="text-align: center;">Набор свечей в виде клубники для торта (6 свечей), 10 см</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div style="padding: 0px 50px 0px 50px;">
+                            <div class="card column flex child-m-auto m-auto">
+                                <div class="cover slider-img" style="background-image: url('images/карточки товаров/форма для выпечки.jfif');"> </div>
+                                <div style="padding: 30px;">
+                                    <p class="slider-head-text">Формы для выпечки</p>
+                                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+                                    <p style="text-align: center;">Набор форм сердечек для выпечки (3 формы)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div style="padding: 0px 50px 0px 50px;">
+                            <div class="card column flex child-m-auto m-auto">
+                                <div class="cover slider-img" style="background-image: url('images/карточки товаров/форма выпечки 2.png');"> </div>
+                                <div style="padding: 30px;">
+                                    <p class="slider-head-text">Формы для выпечки</p>
+                                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+                                    <p style="text-align: center;">Набор форм с ушками для выпечки печенья (6 форм)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div style="padding: 0px 50px 0px 50px;">
+                            <div class="card column flex child-m-auto m-auto">
+                                <div class="cover slider-img" style="background-image: url('images/карточки товаров/красители.png');"> </div>
+                                <div style="padding: 30px;">
+                                    <p class="slider-head-text">Пищевые красители</p>
+                                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+                                    <p style="text-align: center;">Пищевые красители для выпечки, в наборе 5 оттенков пастельных цветов, 1 пакет 15 гр</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div style="padding: 0px 50px 0px 50px;">
+                            <div class="card column flex child-m-auto m-auto">
+                                <div class="cover slider-img" style="background-image: url('images/карточки товаров/красители2.png');"> </div>
+                                <div style="padding: 30px;">
+                                    <p class="slider-head-text">Пищевые красители</p>
+                                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+                                    <p style="text-align: center;">Украшение в виде любимых животных (от 1 до 5 шт)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div style="padding: 0px 50px 0px 50px;">
+                            <div class="card column flex child-m-auto m-auto">
+                                <div class="cover slider-img" style="background-image: url('images/карточки товаров/торт 1.jfif');"> </div>
+                                <div style="padding: 30px;">
+                                    <p class="slider-head-text">Украшение для торта</p>
+                                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+                                    <p style="text-align: center;">Украшение в виде любимых животных (от 1 до 5 шт)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div style="padding: 0px 50px 0px 50px;">
+                            <div class="card column flex child-m-auto m-auto">
+                                <div class="cover slider-img" style="background-image: url('images/карточки товаров/торт 2.jfif');"> </div>
+                                <div style="padding: 30px;">
+                                    <p class="slider-head-text">Украшение для торта</p>
+                                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+                                    <p style="text-align: center;">Украшение на ваш выбор (до 20 элементов)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cover" style="background-image: url('images/фон 2.png'); height: 1500px;">
+        <div class="center-page">
+            <div class="flex child-m-auto" style="padding-top: 450px; padding-bottom: 100px;">
+                <p class="gold-text">Связаться с нами</p>
+            </div>
+            <div class="flex column card child-m-auto" style="padding: 30px;">
+                <p class="bold" style="font-size: 30px;">ЗАПОЛНИТЕ ФОРМУ или<br> ОБРАТИТЕСЬ ПО ТЕЛЕФОНУ</p>
+                <div class="center-page" style="width: 70%;">
+                    <img class="divider m-top-bottom-25" src="images/разделитель для формы связи.png" style="width: 100%;" height="12px">
+
+                    <form class="flex column">
+                        <div class="flex row m-25-bottom change-column change-fullwidth">
+                            <p class="change-center-text" style="font-size: 18px; width: 40%;">Ваше имя*</p>
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="flex row m-25-bottom change-column change-fullwidth">
+                            <p class="change-center-text" style="font-size: 18px; width: 40%;">Email*</p>
+                            <input type="text" placeholder="Ваш email">
+                        </div>
+                        <div class="flex row m-25-bottom change-column">
+                            <p class="change-center-text" style="font-size: 18px; width: 40%;">Номер телефона*</p>
+                            <input type="text" placeholder="Ваш телефон">
+                        </div>
+                        <p style="color: #AC428E;">* Эти поля обязательны к заполнению</p>
+
+                        <button class="button" id="submitBtn" style="margin-top: 30px;">
+                            <p>Отправить</p>
+                        </button>
+                    </form>
+
+                    <div id="popup" class="popup">
+                        <h2>Ваша заявка оформлена!</h2><br>
+                        <button id="closeBtn">Закрыть</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="center-page" style="margin-bottom: 100px;" id="contacts">
+        <div class="flex column child-m-auto">
+            <p class="gold-text">Контакты</p>
+
+            <p style=" font-size: 20px; margin-top: 60px;">• info@pinkcake.ru<br>
+                • 8 (812)-111-22-33<br>
+                • Санкт-Петербург, ул. Большая Морская, 18, Россия, 191186</p>
+        </div>
+    </div>
+
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A330bb04a6e315a344699df1be633796593ec1fdae96f08cbbddd8b35d3798476&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+
+    <div class="flex row child-m-auto p-25" style="background: #FACCD7;">
+        <div class="flex column">
+            <div style="width: 50%; margin-top: 10px;"><a class="x-large"href="#catalog">Каталог</a></div>
+            <div style="width: 50%; margin-top: 10px;"><a class="x-large" href="#sales">Предложения</a></div>
+            <div style="width: 50%; margin-top: 10px;"><a class="x-large" href="#contacts">Фотопечать</a></div>
+            <div style="width: 50%; margin-top: 10px;"><a class="x-large" href="#contacts">Контакты</a></div>
+        </div>
+        <img src="images/лого.png">
+        <div class="flex column">
+            <div style="width: 0%; margin-top: 10px;"><a class="x-large" href="#catalog">VK</a></div>
+            <div style="width: 0%; margin-top: 10px;"><a class="x-large" href="#contacts">Telegram</a></div>
+            <div style="width: 0%; margin-top: 10px;"><a class="x-large" href="#contacts">WhatsApp</a></div>
+        </div>
+    </div>
+
+</body>
+</html>
